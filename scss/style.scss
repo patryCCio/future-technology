@@ -1,7 +1,22 @@
+@import 'navbar';
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  // layout colors
+  --main-color: rgb(56, 176, 90);
+  --bg-color: rgba(36, 33, 33, 1);
+
+  // font colors
+  --main-font-color: rgba(214, 213, 213, 1);
 }
 
 .wrapper {
@@ -22,99 +37,16 @@
     rgba(36, 33, 33, 1) 0%,
     rgba(255, 255, 255, 0) 100%
   );
-  .nav-ul {
-    position: fixed;
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    height: 80vh;
-    width: 100%;
-    background: #000;
-    top: 0;
-    left: 0;
-    transform: translate(0, calc(-100% + 75px));
-    transition: .5s;
-    padding-bottom: 75px;
-    .a-element {
-      flex-grow: 1;
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
-      margin-left: 10%;
-      letter-spacing: 2px;
-      font-size: 30px;
-    }
-    .input-search {
-      flex-grow: 1;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      input {
-        border: none;
-        outline: none;
-        border-radius: 3px;
-        height: 30px;
-        padding-left: 10px;
-        width: 80%;
-        font-size: 14px;
-      }
-    }
-    .nav-arrow{
-        position: absolute;
-        visibility: visible;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        bottom: 25px;
-        right: 25px;
-        width: 50px;
-        height: 25px;
-        span{
-            display: block;
-            background-color: #fff;
-            position: absolute;
-            width: 3px;
-            height: 100%;
-            transform-origin: 50% 100%;
-            transition: .5s .3s;
-        }
-        span:nth-child(1){
-            transform: rotate(25deg);
-        }
-        span:nth-child(2){
-            transform: rotate(-25deg);
-        }
-    }
-    .nav-arrow.active{
-        span{
-            transform-origin: 50% 0%;
-        }
-        span:nth-child(1){
-            transform: rotate(25deg);
-        }
-        span:nth-child(2){
-            transform: rotate(-25deg);
-        }
-    }
-    .nav-arrow:hover{
-        cursor: pointer;
-    }
-  }
-
-  .nav-ul.active{
-    transform: translate(0, 0);
-  }
+  
 }
 
-@media (min-width: 1025px){
-    .header{
-        .nav-ul{
-            flex-direction: row;
-            height: 80px;
-            padding-bottom: 0;
-            .nav-arrow{
-                visibility: hidden;
-            }
-        }
-    }
+.about,
+.content,
+.news,
+.contact {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

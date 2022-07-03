@@ -5,35 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Future Technology</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,700;1,300&family=Pacifico&family=Roboto:wght@300;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <div class="wrapper">
-        <header class="header">
-            <nav class="navbar">
-                <div class="nav-ul">
-                    <div class="nav-arrow">
-                        <span></span><span></span>
-                    </div>
-                    <a class="a-element">Home</a>
-                    <a class="a-element">About</a>
-                    <a class="a-element">Content</a>
-                    <a class="a-element">News</a>
-                    <a class="a-element">Contact</a>
-                    <div class="input-search">
-                        <input type="text" class="search" placeholder="search...">
-                    </div>
-                </div>
-            </nav>
-            <div class="header-img">
-
+      <header id="home" class="header">
+        <nav class="navbar">
+          <div class="nav-ul-wrapper">
+            <div class="nav-ul-top">
+              <a href="#home" class="a-element">Home <span></span></a>
+              <a href="#about" class="a-element">About <span></span></a>
+              <a href="#content" class="a-element">Content <span></span></a>
+              <a href="#news" class="a-element">News <span></span></a>
+              <a href="#contact" class="a-element">Contact <span></span></a>
             </div>
-        </header>
 
-        <section class="about">
-            asdasd
-        </section>
+            <div class="nav-ul-middle">
+              <div class="input-search">
+                <input type="text" class="search" placeholder="search..." />
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+            </div>
+
+            <div class="nav-ul-bottom">
+              <div class="logo">Future<br />Technology</div>
+              <div class="nav-arrow">
+                <span></span>
+                <span></span>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div class="header-img"></div>
+      </header>
+
+      <section id="about" class="about">About section</section>
+
+      <section id="content" class="content">Content section</section>
+
+      <section id="news" class="news">News content</section>
+
+      <section id="contact" class="contact">Contact content</section>
     </div>
+    <script
+      src="https://kit.fontawesome.com/d27bd9035e.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="./js/script.js"></script>
   </body>
 </html>
